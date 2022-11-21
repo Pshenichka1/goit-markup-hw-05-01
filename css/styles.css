@@ -699,7 +699,14 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
+    transition: opacity 350ms linear,
+    visibility 350ms linear;
 }
+.backdroup.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleX(2);
+}
+
+
 .modal {
     width: 528px;
     min-height: 581px;
@@ -708,9 +715,10 @@ body {
     position: absolute;   
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-   
+    transform: translate(-50%, -50%) scaleX(1);
+    transition: transform 350ms linear;
 }
+
 .modal-close { 
     width: 30px;
     height: 30px;
