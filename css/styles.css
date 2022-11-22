@@ -163,15 +163,18 @@ body {
     height: 100%;
     
     color: var(--color-gray);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .contacts-icon {
     fill: var(--color-gray);
     margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 .contacts:hover .contacts-icon,
 .contacts:focus .contacts-icon {
     fill: #2196F3;
+    
 }
 
 .contacts-item+ .contacts-item {
@@ -187,12 +190,14 @@ body {
     font-size: 14px; 
     line-height: 1.1721;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav-link:hover,
 .site-nav-link:focus,
 .site-nav-link.current {
     color: var(--color-blue);
     opacity: 1;
+    
 }
 .site-nav-link,
 .contacts,
@@ -205,6 +210,7 @@ body {
 .contacts:hover,
 .contacts:focus {
     color: var(--color-blue);
+    
 }
 /* gero */
 .section-gero {  
@@ -252,11 +258,13 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-gero:hover,
 .button-gero:focus,
 .button-gero:active {
     color: #2F303A;
+    
 }
 
 /* section our-advantages */
@@ -408,17 +416,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .specialist-icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .specialist-link:hover,
 .specialist-link:focus{
     background-color: #2196F3;
+    
 }
 .specialist-link:hover .specialist-icon {
     fill: #FFFFFF;
+    
 }
 .specialist-link:focus .specialist-icon {
     fill: #FFFFFF;
@@ -445,18 +457,22 @@ body {
     border: 1px solid #AFB1B8; 
     border-radius: 4px; 
     fill: #AFB1B8;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
     border-color: #2196F3;
+   
 
 }
 .client-icon {
     fill: #AFB1B8; 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
     fill: #2196F3;
+    
 }
     
 /* footer */
@@ -542,18 +558,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot-icon {
     fill: rgba(255, 255, 255, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }
 .foot-link:hover,
 .foot-link:focus {
     background-color: #2196F3;
+    
 }
 
 .foot-link:hover .foot-icon {
     fill: #FFFFFF;
+    
 }
 
 .foot-link:focus .foot-icon {
@@ -607,6 +628,9 @@ body {
     text-align: center;
     cursor: pointer;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -616,6 +640,7 @@ body {
     color: var(--color-white);
     background-color: var(--color-blue);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
 }
 
 .portfolio-title {
@@ -637,10 +662,12 @@ body {
 } 
 .list-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-link:hover,
 .list-link:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
 }
 .box-projects {
     padding: 20px 24px;
@@ -693,6 +720,7 @@ body {
 }
 .project-list-item:hover .portfolio-text {
     transform: translateY(0);
+    
 }
 .backdroup {
     width: 100%;
