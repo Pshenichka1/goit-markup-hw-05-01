@@ -145,16 +145,16 @@ body {
 .site-nav-link::after {
     content: "";
     position: absolute;
-    opacity: 0;
+    opacity: 0; 
     width: 100%;
     height: 4px;
     background-color: var(--color-blue); 
     left: 0;
     bottom: 0;
 } 
-.site-nav-link:hover::after {
-    opacity: 1;
-}
+    .site-nav-link.current::after { 
+    opacity: 1; 
+} 
 
 .contacts {   
     display: flex;
@@ -192,6 +192,7 @@ body {
 .site-nav-link:focus,
 .site-nav-link.current {
     color: var(--color-blue);
+    opacity: 1;
 }
 .site-nav-link,
 .contacts,
